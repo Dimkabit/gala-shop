@@ -102,6 +102,7 @@ body a {
 }
 .offcavas-menu__item {
   margin-top: 1.5625rem;
+  width: 50%;
 }
 .offcavas-menu__subtitle {
   font-weight: 700;
