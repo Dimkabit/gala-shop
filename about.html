@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Обязательные метатеги -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="css/styleIcon.css">
+    <title>Карточка</title>
+  </head>
+  <body>
+		<!--header-->
+		<header class="header  container-xxl ml-2 mr-2 d-flex align-items-center justify-content-between pt-2 pb-2">
+			<nav class="header-navbar d-flex align-items-center">
+				<div class="header-logo "><a class="header navbar-brand" href="index.html">Logo</a></div>
+			</nav>
+			<div class="header-form">
+				<form class="header-form-forms d-flex align-items-center  ">
+					<input class="form-control rounded-0" type="search" placeholder="Поиск.." aria-label="Поиск..">
+				 </form>
+			</div>
+			<div class="header-nav-menu">
+				<div class="header-nav-menu__list">
+					<ul class="header-nav-menu__item d-flex pl-3 mb-0">
+						<li class="header-nav-menu__item"><a class="nav-link " href="#sidebar1" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Районы</a></li>
+						<li class="header-nav-menu__item"><a class="nav-link " href="#sidebar2" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Пункт выдачи</a></li>
+						<li class="header-nav-menu__item"><a class="nav-link " href="#sideba3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Список товаров</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-location align-items-center "><a href="#sidebarS" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" class="btn"><span class="px-1 text-light">Ваш город?</span></a></div>
+			<a href="#sidebar" class="btn d-lg-none header-menu " style="z-index: 100;" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+				<span class="navbar-toggles-icon "><img src="img/icons/menu-burger.png" alt="icon: burger-menu"></span>
+			 </a>
+		</header>
+		<h1 class="container-xxl text-center text-light pt-4 mt-2" style="font-size: 2.2rem">Брюки Gala</h1>
+
+	<!--bradcrubs-->
+		<section class="breadcrump pt-3">
+			<div class="container-xxl">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					<li class="breadcrumb-item text-secondary" aria-current="page">Главная</li>
+					<li class="breadcrumb-item active text-light " aria-current="page"><u>Карточка</u></li>
+					</ol>
+				</nav>
+			</div>
+		</section>
+
+	<!--section-main-->
+		<section class="main container-xxl">
+			<div class="main-block d-flex gap-5 ">
+				<div class="main-block-slider ">
+					<div id="product__slider">
+						<div class="product__slider-main ">
+							<div class="slide"><a data-fancybox="gallery" href="img/image/03.jpg"><span class="_icon-fullscreen"></span></a><img src="img/image/03.jpg" alt="" class="img-responsive"></div>
+							<div class="slide"><a data-fancybox="gallery" href="img/image/03.jpg"><span class="_icon-fullscreen"></span></a><img src="img/image/03.jpg" alt="" class="img-responsive"></div>
+							<div class="slide"><a data-fancybox="gallery" href="http://media.w3.org/2010/05/sintel/trailer.mp4"><span class="_icon-fullscreen"></span></a><img src="img/image/03.jpg" alt="" class="img-responsive"></div>
+							<div class="slide"><a data-fancybox="gallery" href="img/image/03.jpg"><span class="_icon-fullscreen"></span></a><img src="img/image/03.jpg" alt="" class="img-responsive"></div>
+						</div>
+						<div class="product__slider-thmb">
+						<div class="slide"><img src="img/image/03.jpg" alt="" class="img-responsive-thumb" width="100" height="
+							100"></div>
+						<div class="slide"><img src="img/image/03.jpg" alt="" class="img-responsive-thumb" width="100" height="
+							100"></div>
+							<div class="slide slide-play _icon-play"><img src="img/image/03.jpg" alt="" class="img-responsive-thumb" width="100" height="
+								100"></div>
+						<div class="slide"><img src="img/image/03.jpg" alt="" class="img-responsive-thumb" width="100" height="
+							100"></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-block-content">
+					<div class="main-block-btn d-flex gap-2 flex-wrap mb-3">
+						<div class="card-block-phone-about">
+							<a href="#" class="btn btn-light btn-phone rounded-0 px-3 py-0">Заказать товар</a>
+						</div>
+						<div class="card-block-icons d-flex flex-wrap gap-1 justify-content-between ">
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-telegram"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-whathapp"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-worning"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-camera"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-video"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-car"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-home"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-heart"></span></a>
+							<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-star"></span></a>
+						</div>
+					</div>
+					<div class="main-options">
+						<ul class="list-groups rounded-0 px-0">
+							<li class="list-group-item text-light ">
+								<strong class="fs-5 fw-normal">Параметры:</strong>
+								<div class="list-block pt-3 d-flex flex-wrap justify-content-between text-secondary">
+									<ul class="px-0">
+										<li class="pb-2  d-flex justify-content-between">Размер:<span class="ps-2 text-light"> <a href="#">42</a></span></li>
+									</ul>
+									<ul class="px-0">
+										<li class="pb-2 d-flex justify-content-between">Рост: <span class="ps-2 text-light">165-175</span></li>
+									</ul>
+									<ul class="px-0">
+										<li class="pb-2 d-flex justify-content-between">Цвет: <span class="ps-2 text-light">Мульти</span></li>
+									</ul>
+									<ul class="px-0">
+										<li class="pb-2 d-flex justify-content-between">Цена: <span class="ps-2 text-light">125$</span></li>
+									</ul>
+								</div>							
+							</li>
+							<li class="list-group-item text-light d-flex flex-wrap align-items-center">
+								<strong class="fs-5 fw-normal">О товаре:</strong>
+								<p class="pt-3 lh-sm fw-light about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt eos dolor est odit pariatur...</p>
+							</li>
+							<li class="list-group-item">
+								<strong class="text-light fs-5 fw-normal">Услуги:</strong>
+								<div class="pt-3 d-flex  justify-content-between text-light">
+									<ul class=" px-0 fw-light list-work">
+										<li class=" pb-1">Курьерская доставка</li>
+										<li class=" pb-1">Самовывоз</li>
+									</ul>
+									<ul class=" px-0 fw-light list-work">
+										<li class=" pb-1">Курьерская доставка</li>
+										<li class=" pb-1">Самовывоз</li>
+									</ul>
+								</div>
+							</li>
+							<li class="list-group-item">
+								<strong class="fs-5 text-light fw-normal">Цены:</strong>
+								<div class="pt-3 text-secondary d-flex pr-5">
+									<ul class="px-0 list-work">
+										<li class="pb-2 ">1 шт - <span class="text-light">125$</span></li>
+									</ul>
+									<ul class="px-0 list-work">
+										<li class="pb-2">2 шт-<span class="text-light">210$</span></li>
+									</ul>
+								</div>
+							</li>
+							<li class="list-group-item text-light">
+								<strong class="fs-5 fw-normal">График работы:</strong>
+								<div class="pt-3 fw-light">
+									c 8.00 до 21.00 без выходных
+								</div>
+							</li>
+							<li class="list-group-item text-light">
+								<strong class="fs-5 fw-normal">Пункты самовывоза:</strong>
+									<div class="pt-3">
+									<div id="map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19620.58422287732!2d23.705150749999998!3d52.06929775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1656374456822!5m2!1sru!2sby" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+								</div>
+							</li>
+							<li class="list-group-item text-light">
+								<strong class="fs-5 fw-normal">Отзывы:</strong>
+								<div class="commit__user pt-3">
+									<p class=" text-light fw-light">Артем Лебедев</p>
+									<div class="commit__text fs-6 fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum minus eum nam ipsum nemo est beatae modi porro repellat enim dolore, provident soluta dolorum voluptate eos excepturi pariatur veritatis nesciunt!
+									</div>
+									<div class="commit__worning">Авторизуйтесь, что бы оставлять отзывы</div>
+									<form action="" method="GET" class="spollers-panel">
+										<div class="spollers-panel__box">
+											<div class="spollers-panel__panel">
+												<div class="spollers-panel__inner">
+													<textarea id="story" name="story" rows="5" cols="33">Напишите отзыв</textarea>
+													<button type="submit" class="spollers-panel__add rounded-0 bg-light text-dark">Отправить</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="main-options-mobile">
+						<div class="accordion " id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button collapsed text-light " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Параметры:
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-light">
+									<ul class="px-0">
+										<li class="pb-2 d-flex justify-content-between">Размер: <span>42</span></li>
+										<li class="pb-2 d-flex justify-content-between">Рост: <span>165-175</span></li>
+										<li class="pb-2 d-flex justify-content-between">Цвет: <span>Мульти</span></li>
+										<li class="pb-2 d-flex justify-content-between">Цена: <span>125$</span></li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+									Обо товаре:
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-light">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt eos dolor est odit pariatur...</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+									Услуги:
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+								<div class="accordion-body d-flex flex-wrap  ">
+									<ul class="collapse-three px-0 pe-2">
+										<li class="text-light pb-1">Курьерская доставка</li>
+										<li class="text-light pb-1">Самовывоз</li>
+									</ul>
+									<ul class="collapse-three px-0 pe-2">
+										<li class="text-light pb-1">Курьерская доставка</li>
+										<li class="text-light pb-1">Самовывоз</li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingCost">
+								<button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCost" aria-expanded="true" aria-controls="collapseCost">
+									Цены:
+								</button>
+							</h2>
+							<div id="collapseCost" class="accordion-collapse collapse" aria-labelledby="headingCost" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-light d-flex justify-content-between">
+									<ul class="px-0 ">
+										<li class="pb-2">1 шт - <span>125$</span></li>
+									</ul>
+									<ul class="px-0">
+										<li class="pb-2">2 шт-<span>210$</span></li>
+									</ul>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingSchedule">
+								<button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSchedule" aria-expanded="false" aria-controls="collapseSchedule">
+									График работы:
+								</button>
+							</h2>
+							<div id="collapseSchedule" class="accordion-collapse collapse" aria-labelledby="headingSchedule" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-light">
+									c 8.00 до 21.00 без выходных
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingMap">
+								<button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMap" aria-expanded="false" aria-controls="collapseOne">
+									Пункты самовывоза:
+								</button>
+							</h2>
+							<div id="collapseMap" class="accordion-collapse collapse" aria-labelledby="headingMap" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-light">
+									<div id="map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19620.58422287732!2d23.705150749999998!3d52.06929775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1656374456822!5m2!1sru!2sby" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item rounded-0">
+							<h2 class="accordion-header" id="headingReviews">
+								<button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReviews" aria-expanded="false" aria-controls="collapseOne">
+									Отзывы:
+								</button>
+							</h2>
+							<div id="collapseReviews" class="accordion-collapse collapse" aria-labelledby="headingReviews" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-light ">
+									<div class="commit__user">
+										Артем Лебедев
+										<div class="commit__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum minus eum nam ipsum nemo est beatae modi porro repellat enim dolore, provident soluta dolorum voluptate eos excepturi pariatur veritatis nesciunt!
+										</div>
+										<div class="commit__worning">Авторизуйтесь, что бы оставлять отзывы</div>
+										<form action="" method="GET" class="spollers-panel">
+											<div class="spollers-panel__box">
+												<div class="spollers-panel__panel">
+													<div class="spollers-panel__inner">
+														<textarea id="story" name="story" rows="5" cols="33">Напишите отзыв</textarea>
+														<button type="submit" class="spollers-panel__add rounded-0 bg-light text-dark">Отправить</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!--section more-->
+		<section class="more container-xxl pt-5">
+			<h3 class="text-light">Вам может понравиться:</h3>
+			<div class="more-block " >
+					<div class="row  more-block-content g-2 justify-content-md-start" >
+						<div class="col-xl-3 col-md-4 col-sm-6  card p-2" >
+							<a href="about.html" target="_blank"><img src="img/image/04.jpg" class="card-img-top rounded-0" alt="photo: 01"></a>
+							<div class="card-body pt-2 px-1 pb-0">
+							  <a href="about.html" target="_blank"><h5 class="card-title text-light" style="font-size: 1.13rem;">Куртка джинсовая TOKYO</h5></a>
+							  <div class="card-block-btn d-flex flex-wrap gap-2 justify-content-between">
+								<div class="card-block-phone">
+									<a href="#" class="btn btn-light btn-phone rounded-0 px-2 py-0">Заказать товар</a>
+								</div>
+								<div class="card-block-icons d-flex gap-1">
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-camera"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-video"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-car"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-home"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-heart"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-star"></span></a>
+								</div>
+							  </div>
+							  <ul class="list-group rounded-0  pt-2 ">
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Рост:
+								  <span >165-175</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Вес:
+								  <span >42-48</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Цена:
+								  <span >143$</span>
+								</li>
+							 </ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6  card p-2" >
+							<a href="about.html" target="_blank"><img src="img/image/02.jpg" class="card-img-top rounded-0" alt="photo: 01"></a>
+							<div class="card-body pt-2 px-1 pb-0">
+							  <a href="about.html" target="_blank"><h5 class="card-title text-light" style="font-size: 1.13rem;">Cарафан джинсовый Zeroy</h5></a>
+							  <div class="card-block-btn d-flex flex-wrap gap-2 justify-content-between">
+								<div class="card-block-phone">
+									<a href="#" class="btn btn-light btn-phone rounded-0 px-2 py-0">Заказать товар</a>
+								</div>
+								<div class="card-block-icons d-flex gap-1">
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-camera"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-video"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-car"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-home"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-heart"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-star"></span></a>
+								</div>
+							  </div>
+							  <ul class="list-group rounded-0  pt-2 ">
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Рост:
+								  <span >165-180</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Размер:
+								  <span >42-50</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Цена:
+								  <a href="#"><span>131$</span></a>
+								</li>
+							 </ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6  card p-2" >
+							<a href="about.html" target="_blank"><img src="img/image/03.jpg" class="card-img-top rounded-0" alt="photo: 01"></a>
+							<div class="card-body pt-2 px-1 pb-0">
+							  <a href="about.html" target="_blank"><h5 class="card-title text-light" style="font-size: 1.13rem;">Брюки Gala</h5></a>
+							  <div class="card-block-btn d-flex flex-wrap gap-2 justify-content-between">
+								<div class="card-block-phone">
+									<a href="#" class="btn btn-light btn-phone rounded-0 px-2 py-0">Заказать товар</a>
+								</div>
+								<div class="card-block-icons d-flex gap-1">
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-camera"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-video"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-car"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-home"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-heart"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-star"></span></a>
+								</div>
+							  </div>
+							  <ul class="list-group rounded-0  pt-2 ">
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Рост:
+								  <span >165-180</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Вес:
+								  <span >42-52</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Цена:
+								  <span >125$</span>
+								</li>
+							 </ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-md-4 col-sm-6  card p-2" >
+							<a href="about.html" target="_blank"><img src="img/image/02.jpg" class="card-img-top rounded-0" alt="photo: 01"></a>
+							<div class="card-body pt-2 px-1 pb-0">
+							  <a href="about.html" target="_blank"><h5 class="card-title text-light" style="font-size: 1.13rem;">Cарафан джинсовый Zeroy</h5></a>
+							  <div class="card-block-btn d-flex flex-wrap gap-2 justify-content-between">
+								<div class="card-block-phone">
+									<a href="#" class="btn btn-light btn-phone rounded-0 px-2 py-0">Заказать товар</a>
+								</div>
+								<div class="card-block-icons d-flex gap-1">
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-camera"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-video"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-car"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-home"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-heart"></span></a>
+									<a href="#" class="btn btn-light btn-icon rounded-0 p-1"><span class="_icon-star"></span></a>
+								</div>
+							  </div>
+							  <ul class="list-group rounded-0  pt-2 ">
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Рост:
+								  <span >165-180</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Размер:
+								  <span >42-50</span>
+								</li>
+								<li class="list-group-item border-0 d-flex justify-content-between align-items-center text-light px-0 py-1">
+									Цена:
+								  <a href="#"><span>131$</span></a>
+								</li>
+							 </ul>
+							</div>
+						</div>
+					</div>
+			
+			</div>
+		</section>
+
+	<!--section text-->
+		<section class="text">
+			<div class="container-xxl">
+				<h2 class="text__title text-light">Текстовый блок</h2>
+				<div class="text__content">
+					<div class="text-light mr-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
+			</div>
+		</section>
+
+	<!--footer-->
+		<footer class="footer container-xxl">
+			<div class="footer-box d-flex align-items-center justify-content-between">
+				<div class="footer-box__logo ">
+					<a href="#">logo</a>
+				</div>
+				<div class="footer-box__copirait text-light">
+					© 2015 - 2021 Все права защищены. 
+				</div>
+				<button class="btn footer-box-btn rounded-0 px-5 py-1">Авторизация</button>
+			</div>
+		</footer>
+
+		<!-- offcanvas -->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar1" aria-labelledby="sidebar-label">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title fw-bold" id="sidebar-label">Районы</h5>
+				<button type="button" class="btn-clos _icon-close" data-bs-dismiss="offcanvas" aria-label="Clos"></button>
+			</div>
+			<div class="offcanvas-body ">
+				<nav class="offcavas-menu__wrapper">
+					<div class="offcavas-menu__cell">
+						<div class="offcavas-menu-block ">
+							<ul class="text-light">
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul class="text-light">
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul class="text-light">
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный </a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Юго-Западный</a></li>
+								<li><a href="#">Центральный</a></li>
+								<li><a href="#">Северный</a></li>
+								<li><a href="#">Северо-Восточный</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+				<!-- offcanvas -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar2" aria-labelledby="sidebar-label">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title fw-bold" id="sidebar-label">Пункт выдачи</h5>
+					<button type="button" class="btn-clos _icon-close" data-bs-dismiss="offcanvas" aria-label="Clos"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<nav class="offcavas-menu__wrapper">
+						<div class="offcavas-menu__cell">
+							<div class="offcavas-menu-block">
+								<ul class="text-light">
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul class="text-light">
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul class="text-light">
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный </a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Юго-Западный</a></li>
+									<li><a href="#">Центральный</a></li>
+									<li><a href="#">Северный</a></li>
+									<li><a href="#">Северо-Восточный</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+						<!-- offcanvas -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="sideba3" aria-labelledby="sidebar-label">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title fw-bold" id="sidebar-label">Список товаров</h5>
+					<button type="button" class="btn-clos _icon-close" data-bs-dismiss="offcanvas" aria-label="Clos"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<nav class="offcavas-menu__wrapper">
+						<div class="offcavas-menu__cell">
+							<div class="offcavas-menu-block">
+								<div class="offcavas-menu__item text-light">
+									<div class="offcavas-menu__subtitle text-light">Женская одежда</div>
+									<ul>
+										<li><a href="#">Куртки, плащи</a></li>
+										<li><a href="#">Кофты</a></li>
+										<li><a href="#">Блузки</a></li>
+										<li><a href="#">Юбки</a></li>
+									</ul>
+								</div>
+								<div class="offcavas-menu__item">
+									<div class="offcavas-menu__subtitle text-light">Мужская одежда</div>
+									<ul>
+										<li><a href="#">Куртки</a></li>
+										<li><a href="#">Джинсы</a></li>
+										<li><a href="#">Брюки</a></li>
+										<li><a href="#">Майки</a></li>
+									</ul>
+								</div>
+								<div class="offcavas-menu__item">
+									<div class="offcavas-menu__subtitle text-light">Детская одежда</div>
+									<ul>
+										<li><a href="#">Куртки</a></li>
+										<li><a href="#">Кофты</a></li>
+										<li><a href="#">Джинсы</a></li>
+										<li><a href="#">Майки</a></li>
+									</ul>
+								</div>
+								<div class="offcavas-menu__item">
+									<div class="offcavas-menu__subtitle text-light">Товары для детей</div>
+									<ul>
+										<li><a href="#">Pampers</a></li>
+										<li><a href="#">Крема</a></li>
+										<li><a href="#">Лосьены</a></li>
+										<li><a href="#">Присыпки</a></li>
+									</ul>
+								</div>
+								<div class="offcavas-menu__item">
+									<div class="offcavas-menu__subtitle text-light">Аксессуары</div>
+									<ul>
+										<li><a href="#">Ремни</a></li>
+										<li><a href="#">Сумки</a></li>
+										<li><a href="#">Шарфы</a></li>
+										<li><a href="#">Перчатки</a></li>
+									</ul>
+								</div>
+								<div class="offcavas-menu__item">
+									<div class="offcavas-menu__subtitle text-light">Игрушки</div>
+									<ul>
+										<li><a href="#">Медведи</a></li>
+										<li><a href="#">Зайцы</a></li>
+										<li><a href="#">Волк</a></li>
+										<li><a href="#">Крокодил</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="offcavas-menu__item">
+								<div class="offcavas-menu__title text-light">Дополнительный пункт меню</div>
+								<div class="offcavas-menu__subtitle text-light">Способ доставки</div>
+								<ul >
+									<li><a href="#">Курьерская</a></li>
+									<li><a href="#">Самовывоз</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+		
+				</div>
+			</div>
+		<!-- offcanvas -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+				<div class="offcanvas-header  justify-content-end">
+					<button type="button" class="btn-clos _icon-close" data-bs-dismiss="offcanvas" aria-label="Clos"></i></button>
+				</div>
+				<div class="offcanvas-body ">
+					<nav class="offcavas-menu__wrapper">
+						<div class="offcavas-menu__cell">
+							<div class="offcavas-menu__item">
+								<ul >
+									<li class="header-nav-menu__item"><a class="nav-link " href="#sidebar1" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Районы</a></li>
+									<li class="header-nav-menu__item"><a class="nav-link " href="#sidebar2" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Метро</a></li>
+									<li class="header-nav-menu__item"><a class="nav-link " href="#sideba3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Список услуг</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+		
+				</div>
+			</div>
+		
+		
+				 <!-- offcanvas -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="sidebarS" aria-labelledby="sidebar-label">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title fw-bold" id="sidebar-label">Выбрате город</h5>
+					<button type="button" class="btn-clos _icon-close" data-bs-dismiss="offcanvas" aria-label="Clos"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<nav class="offcavas-menu__wrap">
+						<div class="offcavas-menu__cell">
+							<div class="offcavas-menu-bloc d-flex">
+								
+									<ul class="px-3">
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва </a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Москва</a></li>
+									</ul>
+						</div>
+					</nav>
+		
+				</div>
+			</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  	 <script src="js/script.js"></script>
+	</body>
+</html>

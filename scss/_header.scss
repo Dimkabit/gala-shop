@@ -1,0 +1,180 @@
+
+.header a{
+	color: $mainWhiteColor !important;
+}
+.header.container-xxl {
+	background: $mainHeaderColor;
+}
+.header-nav-menu__item {
+	white-space: nowrap;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: rem(21);
+	line-height: em(26, 21);
+	color: $mainDarkColor;
+}
+
+.nav-link {
+	color: $mainDarkColor;
+}
+
+.offcavas-menu {
+	// .offcavas-menu__title
+
+
+	&__title {
+		color: $mainDarkColor;
+		font-weight: 700;
+		font-size: rem(21);
+		line-height: em(26, 21);
+		margin-bottom: rem(23);
+
+	}
+
+	// .offcavas-menu__wrapper
+
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(20);
+	}
+
+	// .offcavas-menu__cell
+
+	&__cell {
+		& ul {
+			font-size: rem(18);
+			line-height: em(22, 18);
+			padding: 0;
+		}
+		& a {
+			color: $mainDarkColor;
+		}
+	}
+
+	// .offcavas-menu__item
+
+	&__item {
+		margin-top: rem(25);
+	}
+
+	// .offcavas-menu__subtitle
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: rem(18);
+		line-height: 1;
+		color: $mainDarkColor;
+		margin-bottom: rem(10);
+	}
+}
+
+.offcavas-menu-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.offcanvas-title {
+	font-weight: 600;
+	font-size: rem(21);
+	line-height: em(26, 21);
+}
+
+
+.header-form {
+	max-width: 460px;
+	width: 100%;
+}
+.form-control {
+
+	border: none;
+}
+.header-form-forms {
+	border-radius: none !important;
+}
+.navbar-toggler {
+	border: none;
+}
+.navbar-toggles-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header-location {
+	display: flex;
+	align-items: center;
+}
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-title {
+	font-weight: 600;
+	font-size: rem(21);
+	line-height: em(26, 21);
+}
+
+
+.modal-body {
+
+	// .modal-body__block
+
+	&__block {
+		display: flex;
+		justify-content: space-evenly;
+		gap: rem(10);
+	}
+
+	// .modal-body__list
+
+	&__list {
+		padding-left: 0;
+
+	}
+
+	// .modal-body__link
+
+	&__link {
+		line-height: em(20, 16);
+		&:not(:last-child) {
+			padding-bottom: rem(5);
+		}
+	}
+}
+.modal-body__link a{
+	color: $mainDarkColor !important;
+
+}
+.text__title.text-light {
+	font-weight: 600;
+	font-size: rem(25);
+	line-height: em(30, 25);
+}
+
+
+
+
+@media (max-width: 991px) {
+	.header-nav-menu {
+		display: none;
+	}
+	.header-location {
+		display: none;
+	}
+}
+
+@media (max-width: $sm) {
+	.header {
+		display: block !important;
+	}
+	.header-menu {
+		position: fixed;
+		right: 10px;
+		top: 6px;
+	}
+	.header-form-forms {
+		display: none !important;
+	}
+}

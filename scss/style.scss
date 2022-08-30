@@ -1,0 +1,68 @@
+@use "sass:math";
+//====================================================================================================
+//Percent
+@function percent($px, $from) {
+	$result: calc($px / $from) * 100%;
+	@return $result;
+}
+//REM
+@function rem($px) {
+	$result: calc($px / 16) + rem;
+	@return $result;
+}
+//EM
+@function em($px, $current: 16) {
+	$result: math.div($px, $current) + em;
+	@return $result;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+@import "_icons";
+
+//colors
+$mainBlackColor: #000000;
+$mainDarkColor: #192423;
+$mainHeaderColor: #4B4B4B;
+$mainWhiteColor: #F5F7FF;
+$mainRedColor: #EC2727;
+$mainBlueColor: #007CEE;
+$body-bg: #192423;
+$accordion-bg: #192423;
+$fontFamily: 'Montserrat';
+
+//breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1420px;
+
+.container-xxl {
+	max-width: 1421px;
+	padding: 0 15px;
+}
+body {
+	font-family: 'Montserrat';
+	background: $mainDarkColor;
+	color: #ffffff;
+	a {
+		color: #fff ;
+	}
+}
+
+
+
+.form-control:focus{
+	box-shadow: none;
+}
+.btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+
+@import '_header';
+@import '_null';
+@import '_breadcrump';
+@import '_footer';
+@import '_about';
+@import '_index';

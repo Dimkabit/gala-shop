@@ -1,0 +1,33 @@
+.footer {
+	background: $mainHeaderColor;
+	margin-top: rem(45);
+	padding-top: rem(10);
+	padding-bottom: rem(15);
+}
+.footer-box__logo {
+	font-weight: 700;
+	font-size: rem(20);
+	line-height: em(24, 20);
+}
+
+.footer-box-btn {
+	background-color:  $mainWhiteColor;
+	border-color: $mainWhiteColor;
+	color: $mainBlackColor;
+	@media (any-hover: hover){
+		&:hover{
+			color: $mainWhiteColor;
+			background: $mainBlackColor;
+			border-color: $mainBlackColor;
+
+		}
+	}
+}
+@media (max-width: $sm) {
+	.footer-box {
+		flex-direction: column;
+		gap: rem(10) rem(10);
+		margin-bottom: rem(10);
+	}
+
+}
