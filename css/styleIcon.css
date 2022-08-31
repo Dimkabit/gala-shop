@@ -30,6 +30,7 @@
 }
 ._icon-heart:before {
   content: "\e900";
+ 
 }
 ._icon-home:before {
   content: "\e901";

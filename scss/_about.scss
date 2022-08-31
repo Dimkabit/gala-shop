@@ -68,6 +68,20 @@
 	justify-content: center;
 
  }
+._icon-telegram {
+	@media (any-hover: hover){
+		&:hover{
+			color: $mainBlueColor;
+		}
+	}
+}
+._icon-whathapp {
+	@media (any-hover: hover){
+		&:hover{
+			color: #25D366;
+		}
+	}
+}
  ._icon-fullscreen {
 	position: absolute;
 	z-index: 1;
@@ -120,7 +134,9 @@
 	}
 }
 
-
+.offcavas-menu__item {
+	width: 50%;
+}
 
 
 //========================================================================================================================================================

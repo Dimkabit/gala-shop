@@ -102,7 +102,6 @@ body a {
 }
 .offcavas-menu__item {
   margin-top: 1.5625rem;
-  width: 50%;
 }
 .offcavas-menu__subtitle {
   font-weight: 700;
@@ -375,6 +374,18 @@ img {
   justify-content: center;
 }
 
+@media (any-hover: hover) {
+  ._icon-telegram:hover {
+    color: #007CEE;
+  }
+}
+
+@media (any-hover: hover) {
+  ._icon-whathapp:hover {
+    color: #25D366;
+  }
+}
+
 ._icon-fullscreen {
   position: absolute;
   z-index: 1;
@@ -422,6 +433,10 @@ img {
     padding-top: 20px !important;
   }
 }
+.offcavas-menu__item {
+  width: 50%;
+}
+
 .inffo-block {
   padding-top: 2.1875rem;
 }
@@ -608,12 +623,6 @@ img {
   }
 }
 
-@media (any-hover: hover) {
-  .btn-icon:hover {
-    color: #EC2727;
-  }
-}
-
 .list-group-item {
   background: #192423;
 }
@@ -690,4 +699,28 @@ img {
 .pagination-lg .page-item:last-child .page-link {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+@media (any-hover: hover) {
+  ._icon-camera:hover {
+    color: green;
+  }
+}
+
+@media (any-hover: hover) {
+  ._icon-video:hover, ._icon-heart:hover, ._icon-worning:hover {
+    color: red;
+  }
+}
+
+@media (any-hover: hover) {
+  ._icon-car:hover, ._icon-home:hover {
+    color: green;
+  }
+}
+
+@media (any-hover: hover) {
+  ._icon-star:hover {
+    color: rgb(226, 226, 52);
+  }
 }

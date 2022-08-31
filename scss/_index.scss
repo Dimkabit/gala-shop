@@ -33,13 +33,7 @@
 		}
 	}
 }
-.btn-icon {
-	@media (any-hover: hover){
-		&:hover{
-			color: $mainRedColor;
-		}
-	}
-}
+
 .list-group-item {
 	background: $mainDarkColor;
 }
@@ -116,4 +110,32 @@
 	.pagination-lg .page-item:last-child .page-link {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
+  }
+  ._icon-camera {
+	@media (any-hover: hover){
+		&:hover{
+			color: green;
+		}
+	}
+  }
+  ._icon-video, ._icon-heart, ._icon-worning {
+	@media (any-hover: hover){
+		&:hover{
+			color: red;
+		}
+	}
+  }
+  ._icon-car, ._icon-home {
+	@media (any-hover: hover){
+		&:hover{
+			color: green;
+		}
+	}
+  }
+  ._icon-star {
+	@media (any-hover: hover){
+		&:hover{
+			color: rgb(226, 226, 52);
+		}
+	}
   }
